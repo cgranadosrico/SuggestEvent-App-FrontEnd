@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "532447692086",
+    "firebase_url": "https://daw-project-ba602.firebaseio.com",
+    "project_id": "daw-project-ba602",
+    "storage_bucket": "daw-project-ba602.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532447692086:android:f4aadbdd380e6ec4",
+        "android_client_info": {
+          "package_name": "daw.SuggestEvent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532447692086-b5rcik10p6c5o94ldqihi86oa4m9a1d2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDRLVxKdEv7XsIe0yi9pP6n1FDm4lq03w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

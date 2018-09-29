@@ -1,0 +1,79 @@
+.register {
+  background-color: darkcyan;
+  background-image: url('../assets/imgs/eventbg2.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  section {
+    text-align: center;
+    #imgLogin {
+      position: relative;
+      top: 3em;
+      height: 25%;
+      width: 25%;
+    }
+  }
+  form {
+    position: relative;
+    top: 3em;
+    .label {
+      color: #20d6be;
+      margin: 0
+    }
+    .inputRegister {
+      border: solid 3px #00aea3;
+      color: white;
+      font-weight: bold;
+      border-radius: 2.25em;
+      padding-left: 1em;
+      margin: 10px auto;
+      width: 80%;
+      background: transparent;
+      .item-inner {
+        border: none;
+      }
+    }
+    .inputRegister {
+      position: relative;
+      top: 1em;
+    }
+    .buttonRegister {
+      opacity: 1;
+      padding: 1.5em 8em;
+      position: relative;
+      top: 4em;
+      font-weight: bold;
+      background: linear-gradient(to bottom, rgba(25, 235, 67, 1) 0%, rgba(42, 229, 176, 1) 0%, rgba(32, 214, 214, 1) 100%);
+    }
+    div a {
+      position: relative;
+      top: 75px;
+      font-weight: bold;
+      color: rgb(255, 255, 255)
+    }
+    .item.item-block {
+      background: transparent;
+      font-weight: bold;
+      .item-inner {
+        border: none;
+        p,
+        #validationPassword {
+          color: rgb(109, 21, 21);
+          border: none;
+          padding: 10px 70px;
+        }
+        ul {
+          margin: 0 0 -10px;
+          overflow: inherit;
+          font-size: 1.4rem;
+          color: #6d1515;
+          border: none;
+          padding: 10px 25px;
+          line-height: normal;
+          text-overflow: inherit;
+        }
+      }
+    }
+  }
+}

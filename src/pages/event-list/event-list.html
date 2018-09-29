@@ -1,0 +1,23 @@
+<ion-content class="event-list" padding>
+  <section class="home">
+    <a (click)="goToHome()">
+      <ion-icon name="home"></ion-icon>
+      <span>HOME</span>
+    </a>
+  </section>
+  <h3>Eventos disponibles</h3>
+  <section class='events'>
+    <ion-list>
+      <ion-item ion-item *ngFor="let event of events">
+        <ion-thumbnail item-start>
+          <img src={{event.photo}} alt="foto de perfil">
+        </ion-thumbnail>
+        <h2>{{event.name}}</h2>
+        <p>
+          {{event.description}}
+        </p>
+        <button ion-button clear item-end (click)="openEvent(event)">info</button>
+      </ion-item>
+    </ion-list>
+  </section>
+</ion-content>

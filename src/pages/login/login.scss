@@ -1,0 +1,55 @@
+.login {
+  background-color: rgb(36, 36, 36);
+  background-image: url('../assets/imgs/eventbg.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  section {
+    text-align: center;
+    #imgLogin {
+      position: relative;
+      top: 1em;
+      height: 40%;
+      width: 40%;
+    }
+  }
+  form {
+    position: relative;
+    top: 9em;
+    text-align: center;
+    .label.label-md {
+      color: #20d6be;
+    }
+    .inputLogin {
+      border: solid 3px #00aea3;
+      color: white;
+      font-weight: bold;
+      border-radius: 2.25em;
+      padding-left: 1em;
+      margin: auto;
+      width: 80%;
+      background: transparent;
+      .item-inner {
+        border: none;
+      }
+    }
+    .inputLogin.password {
+      position: relative;
+      top: 1em;
+    }
+    .buttonLogin {
+      opacity: 1;
+      padding: 2em 8em;
+      position: relative;
+      top: 5em;
+      font-weight: bold;
+      background: linear-gradient(to bottom, rgba(25, 235, 67, 1) 0%, rgba(42, 229, 176, 1) 0%, rgba(32, 214, 214, 1) 100%);
+    }
+    div a {
+      position: relative;
+      top: 85px;
+      font-weight: bold;
+      color: white
+    }
+  }
+}

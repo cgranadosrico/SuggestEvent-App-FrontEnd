@@ -1,0 +1,41 @@
+<ion-content class="event-info">
+
+  <button id="closeModal" ion-button (click)="closeEvent()">
+    <ion-icon name="close-circle"></ion-icon>
+  </button>
+  <section class='event-photo'>
+    <img src="http://feriaalhaurindelatorre.com/images/feria-alhaurin-de-la-torre.jpg" alt="foto de perfil">
+    <article>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12>
+            <h1>{{event.name}}</h1>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <div class="dates">
+        <span>Comienzo:</span>
+        <p class="inicio">
+          <b>{{event.date_star}}</b>
+        </p>
+        <br>
+        <span>Fin:</span>
+        <p class="final">
+          <b>{{event.date_end}}</b>
+        </p>
+      </div>
+      <p class="info">{{event.description}}</p>
+    </article>
+    <article>
+      <p class="info">Distancia:
+        <b>{{this.distance}} km</b>
+      </p>
+    </article>
+    <!-- <article class="map" id="map_canvas">
+      <img src="http://www.esedeerre.com/wp-content/uploads/2012/06/geolocalizacion-google-maps-800x400.jpg" alt="" srcset="">
+    </article> -->
+
+    <button class="buttonEvent" ion-button type="button" round (click)="signUpForTheEvent()">Apuntarse al evento</button>
+  </section>
+  <div id="map" style="width:100%; height:40%;"></div>
+</ion-content>

@@ -1,0 +1,120 @@
+.scroll-content {
+  padding: 0
+}
+
+.profile {
+  ion-icon {
+    color: white;
+    display: inline-block;
+  }
+  span {
+    margin-left: 4px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  .logOut {
+    position: relative;
+    left: 70%;
+    font-weight: bolder;
+  }
+}
+
+.home {
+  background-color: rgb(36, 36, 36);
+  background-image: url('../assets/imgs/banner1.png');
+  background-repeat: no-repeat;
+  .button {
+    background-color: #252525;
+  }
+  h3 {
+    position: relative;
+    top: 1em;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+    font-size: 2em;
+  }
+  p {
+    position: relative;
+    top: 3em;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+  }
+  .categories {
+    position: relative;
+    top: 6em;
+    button {
+      margin: 5px auto;
+      box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 1);
+      border-radius: .25em;
+      padding: 10px 10px 40px;
+      font-size: 1.6rem;
+      color: white;
+      font-weight: bolder;
+      text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+      span {
+        position: relative;
+        right: 39px;
+        top: 13px;
+      }
+    }
+    .art {
+      background-image: url('../assets/imgs/art.png');
+      background-color: rgba(248, 76, 76, 0.2);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .cine {
+      background-color: rgba(0, 170, 255, 0.2);
+      background-image: url('../assets/imgs/cine1.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .eat {
+      background-color: rgba( 255, 165, 0, 0.2);
+      background-image: url('../assets/imgs/eat.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .sport {
+      background-color: rgba(82, 220, 51, 0.2);
+      background-image: url('../assets/imgs/sport.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .party {
+      background-color: rgba(165, 80, 221, 0.2);
+      background-image: url('../assets/imgs/party.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .reading {
+      background-color: rgba(255, 236, 89, 0.2);
+      background-image: url('../assets/imgs/reading.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .leisure {
+      background-color: rgba(89, 255, 213, 0.2);
+      background-image: url('../assets/imgs/leisure.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      span {
+        position: relative;
+        right: 79px;
+        top: 13px;
+      }
+    }
+    .randomEvent {
+      border: solid 3px #20d6be;
+      background: transparent;
+      span {
+        color: #b2f5ec;
+        position: relative;
+        right: 0px;
+        top: 13px;
+      }
+    }
+  }
+}

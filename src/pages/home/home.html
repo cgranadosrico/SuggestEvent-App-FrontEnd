@@ -1,0 +1,32 @@
+<ion-content class="home" padding>
+  <section class="profile">
+    <a (click)="goToProfile()">
+      <ion-icon ios="ios-person" md="md-person"></ion-icon>
+      <span>{{this.infoUser.name}}</span>
+
+    </a>
+    <a class="logOut" (click)="goOut()">
+      <strong>
+        <ion-icon ios="ios-log-out" md="md-log-out"></ion-icon>
+      </strong>
+    </a>
+  </section>
+
+
+  <h3>¿Qué quieres hacer hoy?</h3>
+  <p>Esta aplicación te ayudara a encontrar ideas para pasar un dia genial</p>
+  <section class='categories'>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 *ngFor="let category of categories">
+          <button ion-button full (click)="goToEvents(category.id_category)" class="{{category.class_name}} disable-hover button button-ios button-default button-default-ios button-full button-full-ios">{{category.category}}</button>
+        </ion-col>
+        <ion-col *ngIf="lastCategory" col-12>
+          <button ion-button full (click)="goToEvents(lastCategory.id_category)" class="{{lastCategory.class_name}} disable-hover button button-ios button-default button-default-ios button-full button-full-ios">{{lastCategory.category}}</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <button ion-button block outline (click)="getRandomEvent()" class="randomEvent">EVENTO ALEATORIO</button>
+  </section>
+
+</ion-content>

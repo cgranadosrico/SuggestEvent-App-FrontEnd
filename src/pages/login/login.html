@@ -1,0 +1,21 @@
+<ion-content class="login" padding>
+  <section>
+    <img src="https://www.zeepin.io/images/logo/Zeepin_Logo_C_ico.png" id="imgLogin">
+  </section>
+  <form [formGroup]="formLogin" (ngSubmit)="login(formLogin)">
+    <ion-item class="inputLogin">
+      <span *ngIf="formLogin.get('username').hasError('required')">*</span>
+      <ion-label>User</ion-label>
+      <ion-input type="text" name="username" formControlName="username"></ion-input>
+    </ion-item>
+    <ion-item class="inputLogin password">
+      <span *ngIf="formLogin.get('password').hasError('required')">*</span>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" name="password" formControlName="password"></ion-input>
+    </ion-item>
+    <button class="buttonLogin" ion-button [disabled]="!formLogin.valid" type="submit" round>Login</button>
+    <div>
+      <a (click)="goToRegister()">Crear una cuenta</a>
+    </div>
+  </form>
+</ion-content>

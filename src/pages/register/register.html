@@ -1,0 +1,73 @@
+<ion-content class="register" padding>
+  <!-- <section>
+    <img src="https://www.zeepin.io/images/logo/Zeepin_Logo_C_ico.png" id="imgLogin">
+  </section> -->
+  <form [formGroup]="formRegister" (ngSubmit)="register(formRegister)">
+    <ion-item class="inputRegister">
+      <ion-label>User</ion-label>
+      <ion-input type="text" name="username" formControlName="username"></ion-input>
+    </ion-item>
+    <ion-item *ngIf="formRegister.get('username').errors && formRegister.get('username').dirty">
+      <p class="message" *ngIf="formRegister.get('username').hasError('required')" class="error">
+        El usuario es requerido.
+      </p>
+      <p *ngIf="formRegister.get('username').hasError('minlength')">Min de 3 caracteres</p>
+      <p *ngIf="formRegister.get('username').hasError('maxlength')">Max de 20 caracteres</p>
+      <p *ngIf="formRegister.get('username').hasError('pattern')">Usuario no válido</p>
+    </ion-item>
+    <ion-item class="inputRegister info">
+      <ion-label>Email</ion-label>
+      <ion-input type="email" name="email" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item *ngIf="formRegister.get('email').errors && formRegister.get('email').dirty">
+      <p class="message" *ngIf="formRegister.get('email').hasError('required')" class="error">
+        El email es requerido.
+      </p>
+      <p class="message" *ngIf="formRegister.get('email').hasError('pattern')" class="error">
+        Email no valido.
+      </p>
+    </ion-item>
+    <ion-item class="inputRegister info">
+      <ion-label>Name</ion-label>
+      <ion-input type="text" name="name" formControlName="name"></ion-input>
+    </ion-item>
+    <ion-item *ngIf="formRegister.get('name').errors && formRegister.get('name').dirty">
+      <p class="message" *ngIf="formRegister.get('name').hasError('required')" class="error">
+        El nombre es requerido.
+      </p>
+      <p *ngIf="formRegister.get('name').hasError('minlength')">Min de 3 caracteres</p>
+      <p *ngIf="formRegister.get('name').hasError('maxlength')">Max de 20 caracteres</p>
+      <p *ngIf="formRegister.get('name').hasError('pattern')">Nombre no válido</p>
+    </ion-item>
+    <div formGroupName="passwordGroup">
+      <ion-item class="inputRegister info">
+        <ion-label>Password</ion-label>
+        <ion-input type="password" name="password" formControlName="password"></ion-input>
+      </ion-item>
+      <ion-item *ngIf="formRegister.get('passwordGroup.password').errors && formRegister.get('passwordGroup.password').dirty">
+        <div id="validationPassword" color="danger" ion-text *ngIf="formRegister.get('passwordGroup.password').hasError('pattern')">Contraseña insegura
+          <br>
+          <br> Debe tener:
+          <ul>
+            <li>Mínimo 8 y máximo 10</li>
+            <li>una letra</li>
+            <li>un número</li>
+          </ul>
+        </div>
+      </ion-item>
+      <ion-item class="inputRegister info">
+        <ion-label>Repeat Password</ion-label>
+        <ion-input type="password" name="repeatPasswd" formControlName="repeatPasswd"></ion-input>
+      </ion-item>
+      <ion-item *ngIf="formRegister.get('passwordGroup.repeatPasswd').errors && formRegister.get('passwordGroup.repeatPasswd').dirty">
+        <p class="message" *ngIf="formRegister.get('passwordGroup.repeatPasswd').hasError('required')" class="error">
+          No coinciden ambas contraseñas
+        </p>
+      </ion-item>
+    </div>
+    <button class="buttonRegister" ion-button [disabled]="formRegister.invalid" type="submit " round>Register</button>
+    <div>
+      <a (click)="goToLogin() ">Ya tengo cuenta</a>
+    </div>
+  </form>
+</ion-content>

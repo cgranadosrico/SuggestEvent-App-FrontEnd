@@ -1,0 +1,28 @@
+.app {
+  background-color: rgb(36, 36, 36); //background-image: url('../assets/imgs/eventbg.jpg');
+  background-repeat: no-repeat;
+  filter: opacity(20%);
+  filter: grayscale(40%);
+  background-position: 50% 50%;
+  background-size: cover;
+  .menu {
+    margin: 1.5em;
+    background: #01030f;
+  }
+  .list {
+    margin-top: 25px;
+    .pages {
+      padding: 0px 0px 5px 10px;
+      background: transparent;
+      color: white;
+      div.item-inner {
+        border: none;
+        font-size: 18px
+      }
+    }
+  }
+  hr {
+    background: #20d6be;
+    margin: 10px 0 0;
+  }
+}

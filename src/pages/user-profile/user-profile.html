@@ -1,0 +1,48 @@
+<ion-content class="user-profile" padding>
+  <section class="profile">
+    <a (click)="goToHome()">
+      <ion-icon name="home"></ion-icon>
+      <span>HOME</span>
+    </a>
+    <a class="logOut" (click)="goOut()">
+      <strong>
+        <ion-icon ios="ios-log-out" md="md-log-out"></ion-icon>
+      </strong>
+    </a>
+
+  </section>
+
+  <section class='profile-photo'>
+    <img src="{{this.infoUser.photo}}" alt="foto de perfil">
+    <h1>{{this.infoUser.name}}</h1>
+    <h1 class="user-name">{{this.infoUser.username}}</h1>
+    <button class="buttonProfiel" ion-button type="button" round>
+      <ion-icon name="create"></ion-icon>
+    </button>
+    <button class="buttonProfiel" ion-button type="button" round (click)="showPrompt()">
+      <ion-icon name="options"></ion-icon>
+    </button>
+  </section>
+  <section class='last-events'>
+    <h3>Eventos a los que estas apuntado</h3>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12 *ngFor="let event of events">
+          <!-- a partir de aqui -->
+          <ion-card class="event">
+            <ion-card-header>
+              <ion-row>
+                <ion-col col-10>
+                  <p>{{event.name}}</p>
+                </ion-col>
+                <ion-col col-2>
+                  <a (click)="openEvent(event)">info</a>
+                </ion-col>
+              </ion-row>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+</ion-content>

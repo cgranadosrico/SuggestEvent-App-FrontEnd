@@ -1,0 +1,65 @@
+.user-profile {
+  background-color: rgb(36, 36, 36);
+  text-align: center;
+  .profile {
+    text-align: left;
+    ion-icon {
+      color: white;
+      display: inline-block;
+    }
+    span {
+      margin-left: 4px;
+      color: white;
+      font-weight: bold;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+    .logOut {
+      position: relative;
+      left: 74%;
+      font-weight: bolder;
+    }
+  }
+  .profile-photo {
+    margin: 2em 0;
+    color: white;
+    img {
+      border-radius: 100%;
+      width: 50%;
+    }
+    h1 {
+      margin: 0%;
+      margin: 10px 0 0;
+    }
+    h1.user-name {
+      margin: 0;
+      color: rgb(160, 160, 160)
+    }
+    .buttonProfiel {
+      background: linear-gradient(to bottom, rgba(25, 235, 67, 1) 0%, rgba(42, 229, 176, 1) 0%, rgba(32, 214, 214, 1) 100%);
+      margin: 20px 5px;
+      padding: 11px;
+    }
+  }
+  .last-events {
+    margin-top: 40px;
+    color: white;
+    .event {
+      margin: 0 auto;
+      border-radius: .30em;
+      font-weight: bolder;
+      ion-card-header {
+        text-align: left;
+        p {
+          font-weight: bold;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          color: rgb(58, 58, 58);
+        }
+        a {
+          color: #00aea3
+        }
+      }
+    }
+  }
+}
